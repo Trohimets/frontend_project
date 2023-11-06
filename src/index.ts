@@ -1,2 +1,3 @@
-const num = 5;
-console.log(num);
+const num = 5
+
+console.log(num)
