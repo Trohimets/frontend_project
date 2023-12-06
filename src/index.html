@@ -4,20 +4,61 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Домашнее задание 10</title>
   </head>
   <style>
-    div {
-      border: 10 px solid black;
-      padding: 10 px;
-      width: 100 px;
+    .cards_wrapper {
+      border: 1px solid black;
+      padding: 10px;
+      max-width: 700px;
+      gap: 10px 25px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .card {
+      border: 1px solid black;
+      box-sizing: border-box;
+      width: calc(100%-30px) / 4;
+    }
+    .card img {
+      display: block;
+      width: 100%;
+    }
+    .card p {
+      flex-grow: 2;
     }
   </style>
   <body>
-    <div>
-      <div>
-        <img src="" />
-        <h2>Заголовок карточки</h2>
+    <div class="cards_wrapper">
+      <div class="card">
+        <img src="https://placehold.co/200x200/orange/white" />
+        <h2>Заголовок карточки 1</h2>
+        <p style="overflow: hidden; width: 100%"></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button>Купить</button>
+      </div>
+      <div class="card">
+        <img src="https://placehold.co/200x200/black/blue" />
+        <h2>Заголовок карточки 2</h2>
+        <p>Описание</p>
+        <button>Купить</button>
+      </div>
+      <div class="card">
+        <img src="https://placehold.co/200x200/purple/yellow" />
+        <h2>Заголовок карточки 3</h2>
+        <p>Описание</p>
+        <button>Купить</button>
+      </div>
+      <div class="card">
+        <img src="https://placehold.co/200x200/magenta/red" />
+        <h2>Заголовок карточки 4</h2>
+        <p>Описание</p>
+        <button>Купить</button>
+      </div>
+      <div class="card">
+        <img src="https://placehold.co/200x200/gold/silver" />
+        <h2>Заголовок карточки 5</h2>
         <p>Описание</p>
         <button>Купить</button>
       </div>
