@@ -11,7 +11,7 @@
     .cards_wrapper {
       border: 1px solid black;
       padding: 10px;
-      max-width: 700px;
+      max-width: 1000px;
       gap: 10px 25px;
       display: flex;
       flex-wrap: wrap;
@@ -19,14 +19,23 @@
     .card {
       border: 1px solid black;
       box-sizing: border-box;
-      width: calc(100%-30px) / 4;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 20px;
+
     }
     .card img {
       display: block;
       width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
     }
     .card p {
       flex-grow: 2;
+      margin-bottom: 10px;
     }
   </style>
   <body>
@@ -34,8 +43,7 @@
       <div class="card">
         <img src="https://placehold.co/200x200/orange/white" />
         <h2>Заголовок карточки 1</h2>
-        <p style="overflow: hidden; width: 100%"></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <button>Купить</button>
       </div>
       <div class="card">
@@ -56,12 +64,12 @@
         <p>Описание</p>
         <button>Купить</button>
       </div>
-      <div class="card">
+      <!-- <div class="card">
         <img src="https://placehold.co/200x200/gold/silver" />
         <h2>Заголовок карточки 5</h2>
         <p>Описание</p>
         <button>Купить</button>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>
